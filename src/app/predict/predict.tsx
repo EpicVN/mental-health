@@ -85,7 +85,7 @@ export default function Predict() {
   useEffect(() => {
     const fetchOptions = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/options");
+        const response = await axios.get("https://mental-health-server-ji00.onrender.com/options");
         setOptions(response.data);
       } catch (error) {
         console.error("Error fetching options:", error);
