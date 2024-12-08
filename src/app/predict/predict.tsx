@@ -97,7 +97,7 @@ export default function Predict() {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/predict",
+        "https://mental-health-server-ji00.onrender.com/predict",
         formData,
         {
           headers: {
